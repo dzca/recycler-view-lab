@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="country"
+            type="com.demo.country.domain.Country" />
+    </data>
+
+    <!--        app:cardBackgroundColor="@color/colorPrimaryLight"-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="8dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textName"
+                style="@style/style_country_text"
+                android:layout_width="308dp"
+                android:layout_height="wrap_content"
+
+                android:text="@{country.name}"
+                tools:layout_editor_absoluteX="8dp"
+                tools:text="United States of American" />
+
+            <TextView
+                android:id="@+id/textRegion"
+                style="@style/style_country_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{country.region}"
+                tools:layout_editor_absoluteX="332dp"
+                tools:text="NA" />
+
+            <TextView
+                android:id="@+id/textCode"
+                style="@style/style_country_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{country.code}"
+                tools:layout_editor_absoluteX="373dp"
+                tools:text="US" />
+
+            <TextView
+                android:id="@+id/textCaptial"
+                style="@style/style_capital_text"
+                android:layout_width="403dp"
+                android:layout_height="wrap_content"
+                android:text="@{country.capital}"
+
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="24dp"
+                tools:text="Washington, D.C" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
