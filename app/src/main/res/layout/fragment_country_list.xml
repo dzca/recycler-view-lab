@@ -27,7 +27,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/countries_list"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -37,8 +37,6 @@
             app:listData="@{viewModel.countries}"
             tools:itemCount="16"
             tools:listitem="@layout/country_view_item" />
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
