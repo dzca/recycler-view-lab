@@ -10,7 +10,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
 private const val BASE_URL = "https://gist.githubusercontent.com/"
-
+//private const val BASE_URL = "http://localhost:8003/mock/"
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
     .build()
@@ -27,6 +27,7 @@ private val retrofit = Retrofit.Builder()
 
 interface CountryApiService {
     @GET("peymano-wmt/32dcb892b06648910ddd40406e37fdab/raw/db25946fd77c5873b0303b858e861ce724e0dcd0/countries.json")
+//    @GET("countries")
     suspend fun getCountries(): List<Country>
 }
 

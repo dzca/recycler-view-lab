@@ -4,7 +4,7 @@ import android.view.View
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.demo.country.R
+import com.demo.R
 import com.demo.country.domain.Country
 import com.demo.country.domain.RequestStatus
 

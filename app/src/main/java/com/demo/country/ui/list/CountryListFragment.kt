@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.demo.country.databinding.FragmentCountryListBinding
+import com.demo.databinding.FragmentCountryListBinding
 import timber.log.Timber
 
 class CountryListFragment : Fragment() {

@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.demo.country.databinding.CountryViewItemBinding
+import com.demo.databinding.CountryViewItemBinding
 import com.demo.country.domain.Country
 
 class CountryListAdaptor:

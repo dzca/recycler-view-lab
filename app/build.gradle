@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.demo.country'
+    namespace 'com.demo'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.demo.country"
+        applicationId "com.demo"
         minSdk 21
         targetSdk 33
         versionCode 1
