@@ -12,7 +12,9 @@ ext {
     viewmodel_compose_version = '2.5.1'
     kotlin_version = '1.6.10'
     timber_version = '5.0.1'
-
+    fragment_version = '1.5.5'
+    androidx_test_core_version = '1.4.0'
+    mockito_version = '3.4.6'
     coroutine_version = '1.5.2'
     okhttp_version = '4.10.0'
     retrofit_version = '2.9.0'
